@@ -69,8 +69,8 @@ main.iconbitmap('images\\youtube-ios-app.ico')
 
 main.geometry("500x600")
 
-file = PhotoImage(
-   file='images\\photo.png')
+file = PhotoImage(file='images\\photo.png')
+
 headingIcon = Label(main, image=file)
 headingIcon.pack(side=TOP)
 
