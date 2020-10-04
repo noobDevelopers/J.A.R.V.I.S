@@ -69,9 +69,11 @@ sudo apt-get update && sudo apt-get install espeak
  <li>Now Master can switch b/w J.A.R.V.I.S and F.R.I.D.A.Y, switch to female voice assistant</li>
 </ul>
 
+ <img src="jarvis.jpg"/>
 <table>
   <tr>
     <td><img src="images/Screenshot%20(138).png"/></td>
+   
 
 </tr>
 <tr>
