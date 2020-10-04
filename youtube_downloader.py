@@ -75,11 +75,11 @@ headingIcon = Label(main, image=file)
 headingIcon.pack(side=TOP)
 
 urlField = Entry(main, font=("Times New Roman", 18), justify=CENTER)
-urlField.insert(0, "URL do youtube")
+urlField.insert(0, "YouTube video URL")
 urlField.pack(side=TOP, fill=X, padx=10, pady=15)
 
 resolutionField = Entry(main, font=("Times New Roman", 18), justify=CENTER)
-resolutionField.insert(0, "Resolução desejada, ex: 144p")
+resolutionField.insert(0, "Desired resolution, ex: 144p or 360p")
 resolutionField.pack(side=TOP, fill=X, padx=10, pady=15)
 
 
