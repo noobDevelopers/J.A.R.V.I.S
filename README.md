@@ -6,6 +6,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/GauravSingh9356/J.A.R.V.I.S)](https://github.com/GauravSingh9356/J.A.R.V.I.S/network)
 [![GitHub stars](https://img.shields.io/github/stars/GauravSingh9356/J.A.R.V.I.S)](https://github.com/GauravSingh9356/J.A.R.V.I.S/stargazers)
 [![GitHub license](https://img.shields.io/github/license/GauravSingh9356/J.A.R.V.I.S)](https://github.com/GauravSingh9356/J.A.R.V.I.S/blob/master/LICENSE)
+![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/noobDevelopers/J.A.R.V.I.S)
 
 <img src="jarvis1.jpg"/>
 
