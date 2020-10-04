@@ -31,7 +31,6 @@ def startDownload():
             return
         stream_list = create_youtube_object(URL, progress)
         strm = pick_resolution(stream_list, resolution)
-        import ipdb; ipdb.set_trace()
         x = ob.description.split("|")
         file_size = strm.filesize
         dfile_size = file_size
