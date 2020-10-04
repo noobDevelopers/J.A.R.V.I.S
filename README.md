@@ -102,6 +102,7 @@ sudo apt-get update && sudo apt-get install espeak
   <li><h2>What I say sir, Sir</h2></li>
    <li><h2>Gaurav is a good boy</h2></li>
   <li><h2> Email is sent successfully, Sir</h2></li>
+  </ul>
   
   # And so on....
   
