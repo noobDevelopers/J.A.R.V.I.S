@@ -1,10 +1,16 @@
-from pytube import *
+from pytube import YouTube
 from tkinter import *
 from tkinter.filedialog import *
 from tkinter.messagebox import *
 from threading import *
 file_size = 0
 
+def create_youtube_object(url, progress):
+    return YouTube(url, on_progress_callback=progress).streams
+
+def pick_resolution(streams, value):
+    objects_with_res = [stream for stream in streams if stream.resolution == value]
+    return objects_with_res[0]
 
 def progress(stream=None, chunk=None,  remaining=None):
     file_downloaded = (file_size-remaining)
@@ -15,14 +21,17 @@ def progress(stream=None, chunk=None,  remaining=None):
 def startDownload():
     global file_size
     try:
+        print("Starting download")
         URL = urlField.get()
+        resolution = resolutionField.get()
         dBtn.config(text='Please wait...')
         dBtn.config(state=DISABLED)
         path_save = askdirectory()
         if path_save is None:
             return
-        ob = YouTube(URL, on_progress_callback=progress)
-        strm = ob.streams[0]
+        stream_list = create_youtube_object(URL, progress)
+        strm = pick_resolution(stream_list, resolution)
+        import ipdb; ipdb.set_trace()
         x = ob.description.split("|")
         file_size = strm.filesize
         dfile_size = file_size
@@ -40,6 +49,7 @@ def startDownload():
         label.pack_forget()
         desc.pack_forget()
         dBtn.config(text='Start Download')
+        print("Finishing download")
 
     except Exception as e:
         print(e)
@@ -61,13 +71,17 @@ main.iconbitmap('images\\youtube-ios-app.ico')
 main.geometry("500x600")
 
 file = PhotoImage(
-    file='images\\photo.png')
+   file='images\\photo.png')
 headingIcon = Label(main, image=file)
 headingIcon.pack(side=TOP)
 
 urlField = Entry(main, font=("Times New Roman", 18), justify=CENTER)
-
+urlField.insert(0, "URL do youtube")
 urlField.pack(side=TOP, fill=X, padx=10, pady=15)
+
+resolutionField = Entry(main, font=("Times New Roman", 18), justify=CENTER)
+resolutionField.insert(0, "Resolução desejada, ex: 144p")
+resolutionField.pack(side=TOP, fill=X, padx=10, pady=15)
 
 
 dBtn = Button(main, text="Start Download", font=(
