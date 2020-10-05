@@ -37,7 +37,7 @@ def weathernews():
         for key,value in weather_details.items():
             speak(key)
             speak(value)
-        speak('These were the top headlines, Have a nice day Sir!!..')
+        speak('That is all for todays weather, have a good day!')
     else:
         speak('Unable to fetch todays weather')
     
