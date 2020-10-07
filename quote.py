@@ -24,7 +24,7 @@ speakers = ["inspiration","tonny robbins", "love","life","les brown",
             "eric thomas","jim rohn","brian tracy","mel robbins"]
 
 def tell_quote(how_many =1):    
-    quotes = wikiquotes.get_quotes(random.sample(speakers,how_many),"english")
+    quotes = wikiquotes.get_quotes(random.sample(speakers,how_many)[0],"english")
     acceptables = []
     
     for quote in quotes:
@@ -33,7 +33,7 @@ def tell_quote(how_many =1):
         if length>5 and sents<=10:
             acceptables.append(quote)
     
-    tell_quote = random.sample(acceptables,1)
+    tell_quote = random.sample(acceptables,1)[0]
     tell_quote = text_clean(tell_quote)
     
     speak(tell_quote)
