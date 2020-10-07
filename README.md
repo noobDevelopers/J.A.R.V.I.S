@@ -8,7 +8,7 @@
 [![GitHub license](https://img.shields.io/github/license/GauravSingh9356/J.A.R.V.I.S)](https://github.com/GauravSingh9356/J.A.R.V.I.S/blob/master/LICENSE)
 ![GitHub Hacktoberfest combined status](https://img.shields.io/github/hacktoberfest/2020/noobDevelopers/J.A.R.V.I.S)
 
-<img src="jarvis1.jpg"/>
+<img src="images/jarvis1.jpg"/>
 
 ### Requirements:
 
@@ -70,7 +70,7 @@ sudo apt-get update && sudo apt-get install espeak
  <li>Now Master can switch b/w J.A.R.V.I.S and F.R.I.D.A.Y, switch to female voice assistant</li>
 </ul>
 
- <img src="jarvis.jpg"/>
+ <img src="images/jarvis.jpg"/>
 <table>
   <tr>
     <td><img src="images/Screenshot%20(138).png"/></td>
