@@ -19,6 +19,8 @@ import pyjokes
 from sys import platform
 import os
 import getpass
+import random
+from quotes import random
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -114,6 +116,11 @@ def joke():
 def screenshot():
     img = pyautogui.screenshot()
     img.save('path of folder you want to save/screenshot.png')
+
+def inspirational_quote():
+    myQuote = random()
+    speak(myQuote)
+
 
 
 if __name__ == '__main__':
@@ -278,6 +285,10 @@ if __name__ == '__main__':
             else:
                 engine.setProperty('voice', voices[1].id)
             speak("Hello Sir, I have switched my voice. How is it?")
+        
+        elif 'quote' in query:
+            speak('Fetching inspirational quote')
+            inspirational_quote
 
         elif 'email to gaurav' in query:
             try:
