@@ -19,6 +19,7 @@ from sys import platform
 import os
 import getpass
 import random
+from quotes import random
 
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
@@ -116,8 +117,7 @@ def screenshot():
     img.save('path of folder you want to save/screenshot.png')
 
 def inspirational_quote():
-    quotes = open('quotes.txt').read().splitlines()
-    myQuote = random.choice(quotes)
+    myQuote = random()
     speak(myQuote)
 
 
