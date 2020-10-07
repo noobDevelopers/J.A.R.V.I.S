@@ -13,6 +13,7 @@ from news import speak_news, getNewsUrl
 from diction import translate
 from loc import weather
 from youtube import youtube
+from quote import tell_quote
 import psutil
 import pyjokes
 from sys import platform
@@ -151,7 +152,9 @@ if __name__ == '__main__':
             else:
                 engine.setProperty('voice', voices[0].id)
             speak("Hello Sir, I have switched my voice. How is it?")
-
+        
+        if 'inspirational quote' in query:
+            tell_quote()
         if 'jarvis are you there' in query:
             speak("Yes Sir, at your service")
 
