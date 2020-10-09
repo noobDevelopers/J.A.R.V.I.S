@@ -12,10 +12,10 @@ def speak(audio):
 
 
 def weathernews():
-    loc_url = "http://api.ipstack.com/check?access_key=532d61f6d5a9750abc91b118d14a4168"
+    loc_url = "http://api.ipstack.com/check?access_key="
     geo_req = requests.get(loc_url)
     geo_json = json.loads(geo_req.text)
-    api_key = "62d29c78b5095382788bb55c811e13ac"
+    api_key = ""
     url = "http://api.openweathermap.org/data/2.5/weather?"
     city_name = geo_json['city']
     complete_url = url + "appid=" + api_key + "&q=" + city_name
