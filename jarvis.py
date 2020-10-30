@@ -118,20 +118,6 @@ def screenshot():
 
 if __name__ == '__main__':
 
-    if platform == "linux" or platform == "linux2":
-        chrome_path = '/usr/bin/google-chrome'
-
-    elif platform == "darwin":
-        chrome_path = 'open -a /Applications/Google\ Chrome.app'
-
-    elif platform == "win32":
-        chrome_path = 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
-    else:
-        print('Unsupported OS')
-        exit(1)
-
-    webbrowser.register(
-        'chrome', None, webbrowser.BackgroundBrowser(chrome_path))
     wishMe()
     while True:
         query = takeCommand().lower()
@@ -159,8 +145,7 @@ if __name__ == '__main__':
             speak("Yes Sir, at your service")
 
         elif 'open youtube' in query:
-
-            webbrowser.get('chrome').open_new_tab('https://youtube.com')
+            webbrowser.open_new_tab('https://youtube.com')
 
         elif 'cpu' in query:
             cpu()
@@ -173,10 +158,10 @@ if __name__ == '__main__':
             screenshot()
 
         elif 'open google' in query:
-            webbrowser.get('chrome').open_new_tab('https://google.com')
+            webbrowser.open_new_tab('https://google.com')
 
         elif 'open stackoverflow' in query:
-            webbrowser.get('chrome').open_new_tab('https://stackoverflow.com')
+            webbrowser.open_new_tab('https://stackoverflow.com')
 
         elif 'play music' in query:
             os.startfile("D:\\RoiNa.mp3")
@@ -192,7 +177,7 @@ if __name__ == '__main__':
             speak('What do you want to search for?')
             search = takeCommand()
             url = 'https://google.com/search?q=' + search
-            webbrowser.get('chrome').open_new_tab(
+            webbrowser.open_new_tab(
                 url)
             speak('Here is What I found for' + search)
 
@@ -200,7 +185,7 @@ if __name__ == '__main__':
             speak('What is the location?')
             location = takeCommand()
             url = 'https://google.nl/maps/place/' + location + '/&amp;'
-            webbrowser.get('chrome').open_new_tab(url)
+            webbrowser.open_new_tab(url)
             speak('Here is the location ' + location)
 
         elif 'your master' in query:
@@ -238,7 +223,7 @@ if __name__ == '__main__':
             screenshot()
 
         elif 'github' in query:
-            webbrowser.get('chrome').open_new_tab(
+            webbrowser.open_new_tab(
                 'https://github.com/gauravsingh9356')
 
         elif 'remember that' in query:

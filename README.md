@@ -10,8 +10,7 @@
 
 # STARK's JARVIS Is Overrated, Let's create our own...!!
 ## A fully integrated personal voice assistant designed and powered by Python.
-<img src="jarvis1.jpg"/>
-
+<img src="images/jarvis1.jpg"/>
 ### Requirements:
 
 <li>datetime</li>
@@ -72,7 +71,7 @@ sudo apt-get update && sudo apt-get install espeak
  <li>Now Master can switch b/w J.A.R.V.I.S and F.R.I.D.A.Y, switch to female voice assistant</li>
 </ul>
 
- <img src="jarvis.jpg"/>
+ <img src="images/jarvis.jpg"/>
 <table>
   <tr>
     <td><img src="images/Screenshot%20(138).png"/></td>
