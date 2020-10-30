@@ -263,7 +263,7 @@ if __name__ == '__main__':
         elif 'news' in query:
             speak('Ofcourse sir..')
             speak_news()
-            speak('Do you want to read the full news...')
+            speak('Would you like to read the while article?')
             test = takeCommand()
             if 'yes' in test:
                 speak('Ok Sir, Opening browser...')
@@ -277,7 +277,7 @@ if __name__ == '__main__':
                 engine.setProperty('voice', voices[0].id)
             else:
                 engine.setProperty('voice', voices[1].id)
-            speak("Hello Sir, I have switched my voice. How is it?")
+            speak("Hello sir, I have switched my voice. How do you like it?")
 
         elif 'email to gaurav' in query:
             try:
@@ -288,4 +288,4 @@ if __name__ == '__main__':
                 speak('Email has been sent!')
 
             except Exception as e:
-                speak('Sorry sir, Not able to send email at the moment')
+                speak('Sorry sir, but I am not able to send an email at the moment.')
