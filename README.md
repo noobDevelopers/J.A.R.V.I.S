@@ -1,4 +1,5 @@
 # J.A.R.V.I.S
+---
 
 ## Python powered J.A.R.V.I.S
 
@@ -11,16 +12,18 @@
 # STARK's JARVIS Is Overrated, Let's create our own...!!
 ## A fully integrated personal voice assistant designed and powered by Python.
 <img src="images/jarvis1.jpg"/>
+
+
 ### Requirements:
 
 <li>datetime</li>
 <li>os</li>
-<li> pyttsx3</li>
-<li> wikipedia</li>
-<li> speech_recognition </li>
-<li> webbrowser</li>
-<li> sys</li>
-<li> smtplib</li>
+<li>pyttsx3</li>
+<li>wikipedia</li>
+<li>speech recognition </li>
+<li>webbrowser</li>
+<li>sys</li>
+<li>smtplib</li>
 <li>requests</li>
 <li>json</li>
 <li>defflib</li>
@@ -41,8 +44,6 @@ pip3 install loc
 pip3 install wikipedia
 pip install psutil
 pip install pyjokes
-
-
 ```
 
 ### On Ubuntu based Linux distribution you need to install the following packages, so that the code works:
