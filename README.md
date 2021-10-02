@@ -26,24 +26,24 @@
 <li>smtplib</li>
 <li>requests</li>
 <li>json</li>
-<li>defflib</li>
+<li>difflib</li>
 <li>geocoder</li>
 <li>pyjokes</li>
 <li>psutil</li>
 <li> pyautogui</li>
 
-<h2>Required Packages</h2>
+<h2>Clone Project</h2>
 
 ```
-pip3 install SpeechRecognition
-pip3 install jsonlib
-pip3 install pyttsx3
-pip3 install PyAudio
-pip3 install geocoder
-pip3 install loc
-pip3 install wikipedia
-pip install psutil
-pip install pyjokes
+git clone https://github.com/dhgoratela/J.A.R.V.I.S.git
+```
+
+
+<h2>Install Required Packages</h2>
+
+```
+cd J.A.R.V.I.S\
+pip install -r requirements.txt
 ```
 
 ### On Ubuntu based Linux distribution you need to install the following packages, so that the code works:
@@ -107,7 +107,7 @@ sudo apt-get update && sudo apt-get install espeak
    <li><h2>jarvis: Email is sent successfully, Sir</h2></li>
 </ul>
   
-  # And so on....
+  # And so on...
   
 <a href="https://devophub.blogspot.com/2020/06/your-personal-assistant-jarvis.html" target="_blank">Read complete blog article</a>
 
